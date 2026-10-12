@@ -189,7 +189,7 @@ main > section:not(.hero) { position: relative; z-index: 4; }
 .hero__link:hover i { transform: translate(2px, 2px); }
 .hero__title {
   grid-row: 3; grid-column: 1 / -1; align-self: end; justify-self: center;
-  font: 300 clamp(5rem, 21vw, 22rem)/.78 var(--f-display);
+  font: 300 clamp(3.4rem, 17.6vw, 20rem)/.78 var(--f-display);
   text-transform: uppercase; letter-spacing: .02em; white-space: nowrap;
   will-change: filter, transform;
 }
@@ -574,7 +574,7 @@ main > section:not(.hero) { position: relative; z-index: 4; }
   .hero__content { grid-template-rows: 1fr auto auto; row-gap: 20px; }
   .hero__lede { grid-row: 2; }
   .hero__link { grid-row: 3; justify-self: start; min-width: 60%; }
-  .hero__title { grid-row: 4; font-size: 23vw; margin-top: 4vh; }
+  .hero__title { grid-row: 4; font-size: 18vw; margin-top: 4vh; }
 
   .statement { margin-top: -30svh; }
   .statement__text { text-indent: 0; }
