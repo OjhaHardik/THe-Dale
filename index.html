@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Dale · A boutique farmstay in Rausil, Kumaon</title>
+  <meta name="description" content="Ten rooms among orchards, farms and forest at Village Rausil on Haidakhan Road, about 12 km from Kathgodam. All meals included. Same hills as Nainital, none of the crowd.">
+  <meta name="theme-color" content="#EDF3F8">
+  <meta property="og:title" content="The Dale · A boutique farmstay in Rausil, Kumaon">
+  <meta property="og:description" content="The quiet side of Kumaon. Orchard rooms, valley-view cottages and every meal from the farm, 12 km from Kathgodam.">
+  <meta property="og:image" content="img/video/hero-poster.jpg">
+
+  <link rel="icon" href="logo/web/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="img/video/hero-poster.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Dev convenience. For production, self-host these with @font-face + font-display: swap. -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/phosphor/style.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAV: one bar holds every control ============ -->
+  <header class="nav" data-nav>
+    <nav class="nav__group nav__group--l" aria-label="Sections">
+      <a class="chip" href="#stay">Stay</a>
+      <a class="chip" href="#experiences">Experiences</a>
+      <a class="chip" href="#gatherings">Gatherings</a>
+    </nav>
+    <a class="nav__logo" href="#top" aria-label="The Dale, back to top"><span class="logo"></span></a>
+    <div class="nav__group nav__group--r">
+      <a class="chip chip--hide-sm" href="#journey">Getting here</a>
+      <a class="chip chip--solid" href="#enquire">Enquire</a>
+      <button class="chip nav__menu" type="button" aria-expanded="false" aria-controls="sheet" data-menu>Menu</button>
+    </div>
+  </header>
+
+  <div class="sheet" id="sheet" hidden data-sheet>
+    <a href="#stay">Stay</a>
+    <a href="#estate">The estate</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#gatherings">Gatherings</a>
+    <a href="#nearby">Nearby</a>
+    <a href="#table">Table</a>
+    <a href="#journey">Getting here</a>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO: pinned film, fog rolls up over it ============ -->
+    <!-- The film is a seamless loop; the source's single black end frame was cut when compressing,
+         so it loops with no dip. site.js picks the 720p file on small screens. -->
+    <section class="hero" id="top" data-hero>
+      <div class="hero__stage" data-hero-stage>
+        <video class="hero__img" muted loop playsinline preload="auto" poster="img/video/hero-poster.jpg"
+               data-hero-img data-src-lg="img/video/hero-1080.mp4" data-src-sm="img/video/hero-720.mp4"
+               aria-label="A short film of The Dale: the valley in cloud, mangoes on the tree, and the rooms"></video>
+        <div class="hero__shade"></div>
+        <div class="hero__content grid">
+          <p class="hero__lede" data-hero-in>The quiet side of Kumaon.<span>A boutique farmstay among orchards, farms and forest, 12 km from Kathgodam.</span></p>
+          <a class="hero__link" href="#stay" data-hero-in>See the rooms <i class="ph-light ph-arrow-down-right" aria-hidden="true"></i></a>
+          <h1 class="hero__title" data-hero-title><span class="sr">The Dale, </span>Rausil</h1>
+        </div>
+      </div>
+      <div class="fog fog--back" aria-hidden="true" data-fog="0.35">
+        <img src="img/fog/fog-back.webp" srcset="img/fog/fog-back-960.webp 960w, img/fog/fog-back.webp 1920w" sizes="100vw" alt="" width="1920" height="1100">
+      </div>
+      <div class="fog fog--front" aria-hidden="true" data-fog="0.9">
+        <img src="img/fog/fog-front.webp" srcset="img/fog/fog-front-960.webp 960w, img/fog/fog-front.webp 1920w" sizes="100vw" alt="" width="1920" height="1400">
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement grid">
+      <p class="label statement__label">Village Rausil, on Haidakhan Road</p>
+      <p class="statement__text" data-fade>
+        Ten rooms among mango orchards, farms and forest, with the valley in front and a lot of quiet. Every meal from our kitchen, water from our own spring, and nobody selling you a boat ride.
+      </p>
+    </section>
+
+    <!-- ============ NOTE + WIDE PHOTO ============ -->
+    <section class="season-note">
+      <div class="grid">
+        <div class="note" data-reveal>
+          <h2 class="note__h">Same hills, none of the crowd</h2>
+          <p>Six orchard rooms, two valley-view cottages and a garden suite, about 12 km from Kathgodam. Our road turns off at Ranibagh, before the Nainital and Kainchi Dham traffic begins. Easy to reach, and hard to leave.</p>
+        </div>
+      </div>
+      <figure class="ridges" data-ridges>
+        <img src="img/dale/valley-mist.webp" srcset="img/dale/valley-mist-800.webp 900w, img/dale/valley-mist.webp 1536w" sizes="100vw" alt="Cloud drifting through the forested valley below The Dale" width="1536" height="1024" loading="lazy">
+      </figure>
+    </section>
+
+    <!-- ============ NOT NAINITAL ============ -->
+    <section class="compare grid" id="quiet">
+      <header class="compare__head" data-reveal>
+        <p class="label">Same hills, different pace</p>
+        <h2 class="caps">Skip the Mall Road. Keep the mountains.</h2>
+      </header>
+      <div class="compare__body" data-reveal>
+        <table class="vs">
+          <thead><tr><th scope="col"><span class="sr">Time of day</span></th><th scope="col">Nainital in season</th><th scope="col">The Dale</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Arrival</th><td>Traffic on the climb, paid parking</td><td>12 km from Kathgodam, off the hill traffic</td></tr>
+            <tr><th scope="row">Morning</th><td>Horns and hawkers</td><td>Birdsong over the orchard, a walk to Maharaj-ji's ashram</td></tr>
+            <tr><th scope="row">Afternoon</th><td>Boat queue, shopping crowds</td><td>A picnic trail, the river with a fishing rod, the cave seat by the pond</td></tr>
+            <tr><th scope="row">Evening</th><td>Crowded Mall Road</td><td>Dinner on the farm-side deck, a film under the stars on the lawn</td></tr>
+            <tr><th scope="row">Night</th><td>Music from the next hotel</td><td>Crickets. That's it.</td></tr>
+          </tbody>
+        </table>
+        <p class="compare__foot">Want to see Nainital anyway? It's an easy day trip. Then come back to the quiet.</p>
+      </div>
+    </section>
+
+    <!-- ============ OUR HOME ============ -->
+    <section class="hosts grid" data-reveal>
+      <figure class="hosts__img">
+        <img src="img/dale/home-night.webp" srcset="img/dale/home-night-800.webp 900w, img/dale/home-night.webp 1448w" sizes="(min-width: 821px) 33vw, 100vw" alt="The Dale at night, its windows lit warm under a dark blue sky" width="1448" height="1086" loading="lazy">
+      </figure>
+      <blockquote class="hosts__quote">
+        <p><span class="hosts__mark" aria-hidden="true">“</span>We live here too. We built The Dale so others could have the quiet we wake up to, and the food we grow.</p>
+        <footer><b>Your hosts</b><span>The Dale, Rausil</span></footer>
+      </blockquote>
+    </section>
+
+    <!-- ============ STAY: accordion, fits one screen ============ -->
+    <!-- Each room takes any number of photos: add more <img> inside .room__media and the open room
+         gets previous/next controls automatically (a swipe row on phones). Rates are on request for now. -->
+    <section class="stay" id="stay">
+      <header class="stay__head">
+        <h2 class="display">Stay</h2>
+        <p class="label">Ten rooms, every meal included</p>
+      </header>
+
+      <div class="rooms" data-rooms>
+        <article class="room is-open" data-room>
+          <button class="room__hit" type="button" aria-expanded="true" aria-controls="room-1"><span class="sr">Valley-view cottages</span></button>
+          <div class="room__media">
+            <img src="img/dale/cottage-window.webp" srcset="img/dale/cottage-window-800.webp 675w, img/dale/cottage-window.webp 1086w" sizes="(min-width: 821px) 64vw, 100vw" alt="Green mountains framed by a tall window" width="1086" height="1448" loading="lazy">
+            <img src="img/dale/cottage-window-2.webp" srcset="img/dale/cottage-window-2-800.webp 675w, img/dale/cottage-window-2.webp 1086w" sizes="(min-width: 821px) 64vw, 100vw" alt="The valley seen through a cottage window" width="1086" height="1448" loading="lazy">
+            <img src="img/dale/cottage-swing.webp" srcset="img/dale/cottage-swing-800.webp 675w, img/dale/cottage-swing.webp 1086w" sizes="(min-width: 821px) 64vw, 100vw" alt="A macramé swing chair beside a window onto the hills" width="1086" height="1448" loading="lazy">
+          </div>
+          <p class="room__tab" aria-hidden="true">Valley-view cottages</p>
+          <div class="room__body" id="room-1">
+            <p class="room__kicker">2 cottages · set higher up</p>
+            <h3 class="room__name">Valley-view cottages</h3>
+            <p class="room__d">Two separate cottages above the rest, with the whole valley in the window. Attached washroom, air conditioning, mini fridge.</p>
+            <p class="room__price"><b>Sleeps 2</b>Rates on request</p>
+          </div>
+        </article>
+        <article class="room" data-room>
+          <button class="room__hit" type="button" aria-expanded="false" aria-controls="room-2"><span class="sr">Orchard rooms</span></button>
+          <div class="room__media">
+            <img src="img/dale/orchard-room-bed.webp" srcset="img/dale/orchard-room-bed-800.webp 900w, img/dale/orchard-room-bed.webp 1800w" sizes="(min-width: 821px) 64vw, 100vw" alt="An orchard room: a wide bed with a live-edge wooden headboard and a stone feature wall" width="1800" height="1012" loading="lazy">
+            <img src="img/dale/orchard-room-seat.webp" srcset="img/dale/orchard-room-seat-800.webp 900w, img/dale/orchard-room-seat.webp 1800w" sizes="(min-width: 821px) 64vw, 100vw" alt="Two mugs on a small table by a leather armchair and a window onto the trees" width="1800" height="1012" loading="lazy">
+            <img src="img/dale/orchard-room-bed-2.webp" srcset="img/dale/orchard-room-bed-2-800.webp 900w, img/dale/orchard-room-bed-2.webp 1800w" sizes="(min-width: 821px) 64vw, 100vw" alt="A made bed lit by a warm lamp" width="1800" height="1012" loading="lazy">
+            <img src="img/dale/orchard-room-desk.webp" srcset="img/dale/orchard-room-desk-800.webp 900w, img/dale/orchard-room-desk.webp 1800w" sizes="(min-width: 821px) 64vw, 100vw" alt="A live-edge wooden desk with a kettle and a small plant against a stone wall" width="1800" height="1012" loading="lazy">
+            <img src="img/dale/orchard-room-door.webp" srcset="img/dale/orchard-room-door-800.webp 900w, img/dale/orchard-room-door.webp 1800w" sizes="(min-width: 821px) 64vw, 100vw" alt="An orchard room seen through its glass door" width="1800" height="1012" loading="lazy">
+          </div>
+          <p class="room__tab" aria-hidden="true">Orchard rooms</p>
+          <div class="room__body" id="room-2">
+            <p class="room__kicker">6 rooms</p>
+            <h3 class="room__name">Orchard rooms</h3>
+            <p class="room__d">Step out into the mango trees. Stone feature walls, live-edge wood and warm lamps, with an attached washroom, air conditioning and a mini fridge.</p>
+            <p class="room__price"><b>Sleeps 2</b>Rates on request</p>
+          </div>
+        </article>
+        <article class="room" data-room>
+          <button class="room__hit" type="button" aria-expanded="false" aria-controls="room-3"><span class="sr">Garden suite</span></button>
+          <div class="room__media">
+            <img src="img/dale/garden-suite.webp" srcset="img/dale/garden-suite-800.webp 600w, img/dale/garden-suite.webp 1024w" sizes="(min-width: 821px) 64vw, 100vw" alt="The two-storey house among trees, its ground floor the garden suite" width="1024" height="1536" loading="lazy">
+          </div>
+          <p class="room__tab" aria-hidden="true">Garden suite</p>
+          <div class="room__body" id="room-3">
+            <p class="room__kicker">2 rooms + a private hall</p>
+            <h3 class="room__name">Garden suite</h3>
+            <p class="room__d">The ground floor of the duplex: two bedrooms that share their own hall. For families and friends travelling together.</p>
+            <p class="room__price"><b>Sleeps 4</b>Rates on request</p>
+          </div>
+        </article>
+        <article class="room" data-room>
+          <button class="room__hit" type="button" aria-expanded="false" aria-controls="room-4"><span class="sr">The whole estate</span></button>
+          <div class="room__media">
+            <img src="img/dale/estate-terrace.webp" srcset="img/dale/estate-terrace-800.webp 675w, img/dale/estate-terrace.webp 1086w" sizes="(min-width: 821px) 64vw, 100vw" alt="Roofs and a stone terrace among the trees, seen from above" width="1086" height="1448" loading="lazy">
+          </div>
+          <p class="room__tab" aria-hidden="true">The whole estate</p>
+          <div class="room__body" id="room-4">
+            <p class="room__kicker">10 rooms · up to 20 guests</p>
+            <h3 class="room__name">The whole estate</h3>
+            <p class="room__d">Every room, the lawn, the hall and the restaurant, just for your group. For retreats, family gatherings and intimate weddings.</p>
+            <p class="room__price"><b>On request</b><a href="#gatherings">Plan a gathering</a></p>
+          </div>
+        </article>
+      </div>
+      <p class="stay__foot">In every room: attached washroom · air conditioning · mini fridge · modern furnishings · Wi-Fi · pets welcome</p>
+    </section>
+
+    <!-- ============ THE ESTATE ============ -->
+    <section class="estate grid" id="estate">
+      <figure class="estate__img" data-reveal>
+        <img src="img/dale/estate.webp" srcset="img/dale/estate-800.webp 600w, img/dale/estate.webp 1200w" sizes="(min-width: 821px) 40vw, 100vw" alt="The Dale's house rising among tall green trees" width="1200" height="1800" loading="lazy">
+      </figure>
+      <div class="estate__body">
+        <h2 class="caps" data-reveal>Room to breathe, all over the estate.</h2>
+        <ul class="specs">
+          <li data-reveal><span class="specs__n">6,000<small>+ sq ft</small></span><div><h3>The lawn</h3><p>Flat and open to the hills. Yoga at sunrise, cricket at four, a long table at night.</p></div></li>
+          <li data-reveal><span class="specs__n">1,000<small>sq ft</small></span><div><h3>The hall</h3><p>A guest lounge with reading corners, a pool table, a projector and Wi-Fi, for slow afternoons and rainy days.</p></div></li>
+          <li data-reveal><span class="specs__n">52<small>seats</small></span><div><h3>Three places to eat</h3><p>A 36-seat restaurant, an 8-seat balcony over the valley and an 8-seat table by the farm.</p></div></li>
+          <li data-reveal><span class="specs__n"><i class="ph-light ph-moon-stars" aria-hidden="true"></i></span><div><h3>Pond, cave seat and movie nights</h3><p>A small natural pond with a stone cave to sit in, and a screen on the lawn under the open sky.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ A DAY: sticky photo changes with the hour ============ -->
+    <section class="day grid" data-swap>
+      <div class="day__visual" aria-hidden="true">
+        <div class="day__stack">
+          <img class="is-on" src="img/dale/bird.webp" alt="" width="1200" height="1800" loading="lazy" data-swap-img>
+          <img src="img/dale/berries-800.webp" alt="" width="675" height="900" loading="lazy" data-swap-img>
+          <img src="img/dale/gaula-view-800.webp" alt="" width="900" height="675" loading="lazy" data-swap-img>
+          <img src="img/dale/cottage-swing-800.webp" alt="" width="675" height="900" loading="lazy" data-swap-img>
+          <img src="img/dale/home-night-800.webp" alt="" width="900" height="675" loading="lazy" data-swap-img>
+        </div>
+      </div>
+      <div class="day__list">
+        <h2 class="caps">Nothing to rush for.</h2>
+        <ol class="hours">
+          <li data-swap-step="0"><b>6:00</b><span>Birdsong over the orchard. Mist in the valley below the cottages.</span></li>
+          <li data-swap-step="0"><b>6:30</b><span>Walk 500 m to the Neem Karoli Baba ashram, or yoga on the lawn.</span></li>
+          <li data-swap-step="0"><b>8:30</b><span>Breakfast on the balcony, with water from our own spring.</span></li>
+          <li data-swap-step="1"><b>10:30</b><span>A farm and village tour, or a forest trail with a picnic basket.</span></li>
+          <li data-swap-step="1"><b>13:30</b><span>Lunch at the farm-side table.</span></li>
+          <li data-swap-step="2"><b>15:00</b><span>The river: a dip, or an afternoon of angling.</span></li>
+          <li data-swap-step="3"><b>16:30</b><span>The swing by the window, a book, or a game of pool in the hall.</span></li>
+          <li data-swap-step="3"><b>17:30</b><span>Sunset from the cave seat by the pond.</span></li>
+          <li data-swap-step="4"><b>20:00</b><span>Dinner in the restaurant.</span></li>
+          <li data-swap-step="4"><b>21:00</b><span>A film on the lawn, then stars.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FARM: sticky photo, seasons scroll past ============ -->
+    <section class="farm grid" id="farm">
+      <div class="farm__visual" aria-hidden="true">
+        <div class="farm__stack">
+          <img class="is-on" src="img/dale/hibiscus.webp" alt="" width="1350" height="1800" loading="lazy" data-season-img>
+          <img src="img/dale/mango-tree.webp" alt="" width="1800" height="1012" loading="lazy" data-season-img>
+          <img src="img/dale/fern.webp" alt="" width="1350" height="1800" loading="lazy" data-season-img>
+          <img src="img/dale/tejpatta.webp" alt="" width="1200" height="1800" loading="lazy" data-season-img>
+        </div>
+      </div>
+
+      <div class="farm__list">
+        <header class="farm__head">
+          <h2 class="caps">An organic farm and orchard, by season.</h2>
+        </header>
+        <article class="season" data-season>
+          <img class="season__img" src="img/dale/hibiscus-800.webp" alt="A pink hibiscus flower in the garden" width="675" height="900" loading="lazy">
+          <p class="label">March to April</p>
+          <h3 class="season__h">Spring flowers <span class="deva" lang="hi">फूलदेई</span></h3>
+          <p>The garden comes into flower. Help with the spring sowing, and join the village children for Phool Dei, when they leave flowers on every doorstep.</p>
+        </article>
+        <article class="season" data-season>
+          <img class="season__img" src="img/dale/mango-tree-800.webp" alt="Green mangoes on the tree against a blue sky" width="900" height="506" loading="lazy">
+          <p class="label">May to July</p>
+          <h3 class="season__h">Mango season <span class="deva" lang="hi">आम</span></h3>
+          <p>Rausil is known for its mangoes. Pick them in the orchard, along with bananas and wild berries from the forest edge, and turn the surplus into chutney.</p>
+        </article>
+        <article class="season" data-season>
+          <img class="season__img" src="img/dale/fern-800.webp" alt="A fern unfolding in the monsoon" width="675" height="900" loading="lazy">
+          <p class="label">July to September</p>
+          <h3 class="season__h">Harela and the green <span class="deva" lang="hi">हरेला</span></h3>
+          <p>At Harela, Kumaon's festival of green, everyone plants a tree. The ferns unroll, the fields fill, and the fireflies come out at night.</p>
+        </article>
+        <article class="season" data-season>
+          <img class="season__img" src="img/dale/tejpatta-800.webp" alt="Tej patta leaves drying on the branch" width="600" height="900" loading="lazy">
+          <p class="label">October to February</p>
+          <h3 class="season__h">Spice and harvest <span class="deva" lang="hi">तेजपत्ता</span></h3>
+          <p>Dry the tej patta from our own trees, bring in the millet, make pickles, and sit in the winter sun on the lawn.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCES: two calm rows of four ============ -->
+    <section class="culture" id="experiences">
+      <div class="grid">
+        <h2 class="caps culture__h" data-reveal>Out on the land.</h2>
+      </div>
+      <div class="collage grid">
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="-5"><img src="img/dale/estate-terrace-800.webp" alt="A stone terrace among tall trees" width="675" height="900" loading="lazy"></div>
+          <figcaption><b>Forest walks &amp; picnic trails</b>Trails from the estate into the forest. We pack the basket.</figcaption>
+        </figure>
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="5"><img src="img/dale/gaula-view-800.webp" alt="The braided Gaula river in the valley below" width="900" height="675" loading="lazy"></div>
+          <figcaption><b>River excursions &amp; angling</b>A day by the Gaula with a rod, or just your feet in the water.</figcaption>
+        </figure>
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="-5"><img src="img/dale/banana-800.webp" alt="A bunch of green bananas on the tree" width="600" height="900" loading="lazy"></div>
+          <figcaption><b>Farm &amp; village tours</b>Walk the orchard and fields, then the village lanes of Rausil.</figcaption>
+        </figure>
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="5"><img src="img/dale/berries-800.webp" alt="A cluster of ripe red berries" width="675" height="900" loading="lazy"></div>
+          <figcaption><b>Organic produce</b>Pick it, cook it, eat it at dinner, and take a box home.</figcaption>
+        </figure>
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="-5"><img src="img/dale/spring-water-800.webp" alt="Clear water held in a large green leaf" width="675" height="900" loading="lazy"></div>
+          <figcaption><b>Spring water</b>Our water comes from a natural spring on the estate.</figcaption>
+        </figure>
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="5"><img src="img/dale/aipan-plate-800.webp" alt="A hand holding a plate painted with Aipan in white and orange on red" width="720" height="900" loading="lazy"></div>
+          <figcaption><b>Aipan <span class="deva" lang="hi">ऐपण</span></b>Paint a plate in Kumaon's rice-paste-and-geru folk art and take it home.</figcaption>
+        </figure>
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="-5"><img src="img/dale/bird-800.webp" alt="A small bird perched at the top of a tree" width="600" height="900" loading="lazy"></div>
+          <figcaption><b>Birding mornings</b>Orchard, forest edge and valley. Binoculars at the desk.</figcaption>
+        </figure>
+        <figure class="tile" data-reveal>
+          <div class="tile__img" data-drift="5"><img src="img/dale/cottage-swing-800.webp" alt="A macramé swing chair by a window onto green hills" width="675" height="900" loading="lazy"></div>
+          <figcaption><b>Doing nothing</b>A swing, a book from the hall, and the dog asleep on the lawn. Pets welcome.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ GATHERINGS ============ -->
+    <section class="gather grid" id="gatherings">
+      <div class="gather__intro" data-reveal>
+        <h2 class="caps">Retreats, small weddings, and the whole family.</h2>
+        <p>Take the whole estate: ten rooms for up to 20 guests, a 6,000 sq ft lawn, a 1,000 sq ft hall and 52 seats across three dining spaces, in a quiet valley 12 km from the railhead.</p>
+        <a class="btn" href="#enquire" data-plan="Wedding / event">Plan a gathering</a>
+      </div>
+      <ul class="gather__kinds" data-reveal>
+        <li><h3>Wellness &amp; yoga retreats</h3><p>Lawn sessions at sunrise, the hall for workshops, the ashram 500 m away.</p></li>
+        <li><h3>Intimate weddings</h3><p>A ceremony on the lawn, dinner across the restaurant and decks.</p></li>
+        <li><h3>Offsites &amp; workshops</h3><p>The hall with a projector and Wi-Fi, breakout space on the lawn.</p></li>
+        <li><h3>Family gatherings</h3><p>Birthdays and anniversaries, with every room for your family only.</p></li>
+      </ul>
+      <table class="vs gather__table" data-reveal>
+        <thead><tr><th scope="col">Space</th><th scope="col">Size</th><th scope="col">Good for</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Lawn</th><td>6,000+ sq ft, flat</td><td>Ceremonies, yoga, long-table dinners, movie nights</td></tr>
+          <tr><th scope="row">Hall</th><td>1,000 sq ft, projector, Wi-Fi</td><td>Workshops, talks, a lounge, rainy-day events</td></tr>
+          <tr><th scope="row">Dining</th><td>36 indoor + 8 balcony + 8 farm-side</td><td>Up to 52 seated</td></tr>
+          <tr><th scope="row">Rooms</th><td>6 orchard rooms, 2 cottages, garden suite</td><td>Up to 20 staying guests</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ============ NEARBY ============ -->
+    <section class="nearby grid" id="nearby">
+      <header class="nearby__head" data-reveal>
+        <h2 class="caps">Worth the trip. Then come back to the quiet.</h2>
+        <p>Most guests leave the estate once in a stay, if at all. Here is what's near, and how busy it gets.</p>
+      </header>
+      <div class="nearby__group" data-reveal>
+        <h3 class="label">Walking distance</h3>
+        <ul class="places">
+          <li class="places__wide"><h4>Neem Karoli Baba Ashram, Rausil</h4><p>About 500 m from our gate. A small, quiet ashram of Maharaj-ji in the village. Walk over at sunrise, sit a while, come back for chai.</p><span class="pill">Peaceful</span></li>
+          <li><h4>Village walks</h4><p>Rausil's orchards and lanes, and tea at a village shop.</p><span class="pill">Peaceful</span></li>
+        </ul>
+      </div>
+      <div class="nearby__group" data-reveal>
+        <h3 class="label">On Haidakhan Road and around</h3>
+        <ul class="places">
+          <li><h4>Haidakhan Ashram</h4><p>Haidakhan Babaji's ashram on the Gautam Ganga, further up our road, or a 7 km river walk with 10–11 crossings.</p><span class="pill">Peaceful</span></li>
+          <li><h4>Harishtal Lake</h4><p>A small, quiet lake in the hills for a half-day out.</p><span class="pill">Peaceful</span></li>
+          <li><h4>Jamrani Dam</h4><p>On the Gaula, where the river walk to Haidakhan begins.</p><span class="pill">Quiet</span></li>
+          <li><h4>Chota Kailash</h4><p>A hilltop Shiva temple, a steep 3–4 km climb from Pinraun. Busy only on Mahashivratri.</p><span class="pill">Peaceful, with a climb</span></li>
+          <li><h4>Ranibagh</h4><p>Jiya Rani's cave and the Gaula ghat. The Uttarayani fair is on 13–14 January.</p><span class="pill pill--mid">Busy 13–14 Jan</span></li>
+          <li><h4>Kalichaur Temple</h4><p>A hilltop Kali shrine above the Gaula valley.</p><span class="pill">Peaceful</span></li>
+        </ul>
+      </div>
+      <div class="nearby__group" data-reveal>
+        <h3 class="label">Day trips across Kumaon</h3>
+        <ul class="places places--four">
+          <li><h4>Bhimtal · Sattal · Naukuchiatal</h4><p>The lake country, an easy day out.</p><span class="pill pill--mid">Moderate</span></li>
+          <li><h4>Kainchi Dham</h4><p>Go once for darshan, at dawn on a weekday.</p><span class="pill pill--busy">Very busy</span></li>
+          <li><h4>Nainital</h4><p>The lake and Mall Road. Go early on a weekday.</p><span class="pill pill--busy">Busy</span></li>
+          <li><h4>Mukteshwar</h4><p>Orchards and Himalayan views, a longer drive.</p><span class="pill pill--mid">Moderate</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TABLE ============ -->
+    <!-- TODO: replace the meal photo (a Wikimedia placeholder) with a thali shot on the farm-side table. -->
+    <section class="table" id="table">
+      <div class="grid">
+        <h2 class="caps table__h" data-fade>Every meal, from the farm to three tables.</h2>
+      </div>
+      <div class="grid table__body">
+        <figure class="table__img" data-reveal>
+          <img src="img/food.jpg" srcset="img/food-800.jpg 800w, img/food.jpg 1382w" sizes="(min-width: 900px) 33vw, 100vw" alt="A pahadi meal on leaves: mandua roti with white butter, rice, greens, dal and black soybean" width="1382" height="1728" loading="lazy">
+        </figure>
+        <div class="menu" data-reveal>
+          <p class="menu__intro">All meals are included. Kumaoni and home-style food, cooked from the farm and orchard.</p>
+          <div class="menu__group">
+            <h3 class="label">Where you eat</h3>
+            <ul>
+              <li><span>The restaurant</span><span class="menu__n">36 seats</span></li>
+              <li><span>The valley balcony</span><span class="menu__n">8 seats</span></li>
+              <li><span>The farm-side table</span><span class="menu__n">8 seats</span></li>
+            </ul>
+          </div>
+          <div class="menu__group">
+            <h3 class="label">From the fields and kitchen</h3>
+            <ul>
+              <li><span>Mandua roti</span><span class="deva" lang="hi">मडुवा रोटी</span></li>
+              <li><span>Gahat dal</span><span class="deva" lang="hi">गहत दाल</span></li>
+              <li><span>Bhatt ki churkani</span><span class="deva" lang="hi">भट्ट की चुड़कानी</span></li>
+              <li><span>Aloo ke gutke</span><span class="deva" lang="hi">आलू के गुटके</span></li>
+              <li><span>Aam ki chutney, in season</span><span class="deva" lang="hi">आम की चटनी</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOUSE NOTES ============ -->
+    <section class="notes grid">
+      <div class="notes__card" data-reveal>
+        <p class="label">Welcome to The Dale</p>
+        <h2 class="caps">A few things we ask, with love.</h2>
+        <ul class="notes__list">
+          <li><i class="ph-light ph-moon-stars" aria-hidden="true"></i><p><b>Quiet hours.</b> Music low, and silent after 10 pm. Events keep their own timings.</p></li>
+          <li><i class="ph-light ph-drop" aria-hidden="true"></i><p><b>Spring water.</b> Our water comes from a spring on the estate. Please use it gently.</p></li>
+          <li><i class="ph-light ph-bowl-food" aria-hidden="true"></i><p><b>All meals included.</b> Tell us about any dietary needs when you book.</p></li>
+          <li><i class="ph-light ph-paw-print" aria-hidden="true"></i><p><b>Pets welcome.</b> Keep them with you, and off the beds.</p></li>
+          <li><i class="ph-light ph-books" aria-hidden="true"></i><p><b>The hall.</b> Open to every guest: books, the pool table, the projector.</p></li>
+          <li><i class="ph-light ph-lightning" aria-hidden="true"></i><p><b>Power.</b> We have backup, but the hills cut out sometimes.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ THE VALLEY: the fog lifts off the drone film ============ -->
+    <!-- The drone film's last 2 seconds cross-fade into its first 2, so the loop has no jump. -->
+    <section class="peaks" data-peaks>
+      <div class="peaks__stage">
+        <video class="peaks__img" muted loop playsinline preload="none" poster="img/video/valley-poster.jpg"
+               data-peaks-img data-src-lg="img/video/valley-1080.mp4" data-src-sm="img/video/valley-720.mp4"
+               aria-label="Drone film rising over the forest as the cloud parts over the valley and the Gaula river"></video>
+        <div class="peaks__shade"></div>
+        <div class="peaks__copy" data-peaks-copy>
+          <h2 class="peaks__title">The valley</h2>
+          <p>Wake up above it.</p>
+        </div>
+        <div class="peaks__fog" aria-hidden="true" data-peaks-fog>
+          <img src="img/fog/fog-front.webp" srcset="img/fog/fog-front-960.webp 960w, img/fog/fog-front.webp 1920w" sizes="100vw" alt="" width="1920" height="1400" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GETTING HERE + ENQUIRE ============ -->
+    <section class="plan grid" id="journey">
+      <div class="journey">
+        <h2 class="caps">Easy to reach. Hard to leave.</h2>
+        <ol class="route">
+          <li data-reveal>
+            <i class="ph-light ph-train" aria-hidden="true"></i>
+            <div><h3>Train to Kathgodam</h3><p>We're about 12 km from the station and we'll pick you up. The Shatabdi leaves New Delhi at 06:20 and arrives at 11:40; the overnight Ranikhet Express arrives at 04:55.</p></div>
+          </li>
+          <li data-reveal>
+            <i class="ph-light ph-path" aria-hidden="true"></i>
+            <div><h3>Up Haidakhan Road</h3><p>By road, turn off at Ranibagh, before the hill traffic. <a href="https://maps.app.goo.gl/9cNAdwmSf6xNckc8A" target="_blank" rel="noopener">Open in Google Maps</a></p></div>
+          </li>
+          <li data-reveal>
+            <i class="ph-light ph-airplane" aria-hidden="true"></i>
+            <div><h3>Pantnagar airport</h3><p>The nearest airport. We arrange the transfer.</p></div>
+          </li>
+        </ol>
+
+        <div class="faq" data-reveal>
+          <h3 class="label">Good to know</h3>
+          <details><summary>Are meals included?</summary><p>Yes, all meals, cooked from our farm and orchard.</p></details>
+          <details><summary>Will we get stuck in Kainchi Dham or Nainital traffic?</summary><p>No. Our road leaves the highway at Ranibagh, at the foot of the hills.</p></details>
+          <details><summary>Are the rooms air-conditioned?</summary><p>Yes. Every room has AC, an attached washroom and a mini fridge.</p></details>
+          <details><summary>Can we book the whole place?</summary><p>Yes: ten rooms for up to 20 guests, with the lawn, the hall and the restaurant.</p></details>
+          <details><summary>Can we bring our dog?</summary><p>Yes. Tell us when you book.</p></details>
+          <details><summary>Is there a Neem Karoli Baba ashram nearby?</summary><p>Yes, about 500 m away in Rausil. Kainchi Dham is a longer drive; we can arrange an early car.</p></details>
+        </div>
+      </div>
+
+      <div class="enquire" id="enquire">
+        <h2 class="enquire__h">Enquire</h2>
+        <p class="enquire__note">Tell us what you're planning. We'll send rates and availability on WhatsApp.</p>
+
+        <form class="form" novalidate data-form>
+          <fieldset class="field kinds">
+            <legend>I'm planning</legend>
+            <div class="kinds__row">
+              <label><input type="radio" name="kind" value="Stay" checked><span>A stay</span></label>
+              <label><input type="radio" name="kind" value="Retreat"><span>A retreat</span></label>
+              <label><input type="radio" name="kind" value="Wedding / event"><span>A wedding or event</span></label>
+              <label><input type="radio" name="kind" value="Whole estate"><span>The whole estate</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+            <p class="field__error" id="f-name-err" hidden>Please tell us your name.</p>
+          </div>
+          <div class="field">
+            <label for="f-phone">WhatsApp number</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91" required aria-describedby="f-phone-err">
+            <p class="field__error" id="f-phone-err" hidden>Please enter a phone number we can WhatsApp.</p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-date">Arriving</label>
+              <input id="f-date" name="arrival" type="date" required aria-describedby="f-date-err">
+              <p class="field__error" id="f-date-err" hidden>Please pick a date.</p>
+            </div>
+            <div class="field">
+              <label for="f-nights">Nights</label>
+              <select id="f-nights" name="nights"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>7</option><option>Longer</option></select>
+            </div>
+            <div class="field">
+              <label for="f-guests">Guests</label>
+              <select id="f-guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5–8</option><option>9–14</option><option>15–20</option><option>More than 20</option></select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-pet">Bringing a pet?</label>
+            <select id="f-pet" name="pet"><option selected>No</option><option>Yes, a dog</option><option>Yes, another pet</option></select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Anything we should know <span class="opt">(optional)</span></label>
+            <textarea id="f-msg" name="message" rows="3" aria-describedby="f-msg-help"></textarea>
+            <p class="field__help" id="f-msg-help">Dietary needs, the occasion, an experience you're curious about.</p>
+          </div>
+          <button class="btn" type="submit"><span data-form-label>Send enquiry</span></button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="talk">
+          <p>Or talk to us directly</p>
+          <a href="https://wa.me/917055077711" target="_blank" rel="noopener"><i class="ph-light ph-whatsapp-logo" aria-hidden="true"></i>WhatsApp</a>
+          <a href="tel:+917055077711"><i class="ph-light ph-phone" aria-hidden="true"></i>+91 70550 77711</a>
+          <a href="https://www.instagram.com/the.dale.story/" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo" aria-hidden="true"></i>@the.dale.story</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="grid footer__top">
+      <div class="footer__brand">
+        <span class="logo logo--full footer__logo" role="img" aria-label="The Dale, Rausil, Uttarakhand"></span>
+        <p>A boutique farmstay. The quiet side of Kumaon.</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="label">Stay</h2>
+        <a href="#stay">Rooms</a><a href="#estate">The estate</a><a href="#experiences">Experiences</a><a href="#table">Table</a>
+      </div>
+      <div class="footer__col">
+        <h2 class="label">Plan</h2>
+        <a href="#gatherings">Gatherings</a><a href="#nearby">Nearby</a><a href="#journey">Getting here</a><a href="#enquire">Enquire</a>
+      </div>
+      <div class="footer__col">
+        <h2 class="label">Talk</h2>
+        <a href="tel:+917055077711">+91 70550 77711</a>
+        <a href="https://wa.me/917055077711" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/the.dale.story/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://maps.app.goo.gl/9cNAdwmSf6xNckc8A" target="_blank" rel="noopener">Google Maps</a>
+      </div>
+    </div>
+    <div class="grid footer__legal">
+      <p>© 2026 The Dale · Village Rausil, Haidakhan Road, Nainital district, Uttarakhand</p>
+      <details class="credits">
+        <summary>Photography</summary>
+        <p>Photographs and film shot at The Dale, not generated. One placeholder until our own: the meal photo, Uttarakhand cuisine by Reetu Thuwal (CC BY-SA 4.0), Wikimedia Commons. Fog layers generated for The Dale.</p>
+      </details>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
